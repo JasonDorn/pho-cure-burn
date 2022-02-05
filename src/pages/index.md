@@ -1,9 +1,9 @@
 ---
 templateKey: index-page
-title: Great coffee with a conscience
-image: /img/home-jumbotron.jpg
+title: The best pho on playa
+image: /img/michelin_pho.png
 heading: Great coffee with a conscience
-subheading: Support sustainable farming while enjoying a cup
+subheading: Hunger made us do it
 mainpitch:
   title: Why Kaldi
   description: >
