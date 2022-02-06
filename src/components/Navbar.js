@@ -52,7 +52,7 @@ const Navbar = () => {
             <Link className="navbar-item" to="/products">
               Phounders
             </Link>
-            <Link className="navbar-item" to="/blog">
+            <Link className="navbar-item" to="/events">
               Events
             </Link>
             <Link className="navbar-item" to="/blog">
@@ -60,28 +60,28 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="navbar-end column is-4 social">
-                <a title="facebook" href="https://www.facebook.com/phocureburn/">
-                  <img
-                    src={facebook}
-                    alt="Facebook"
-                    style={{ width: "1em", height: "1em" }}
-                  />
-                </a>
-                <a title="twitter" href="https://twitter.com/phocureburn">
-                  <img
-                    className="fas fa-lg"
-                    src={twitter}
-                    alt="Twitter"
-                    style={{ width: "1em", height: "1em" }}
-                  />
-                </a>
-                <a title="instagram" href="https://www.instagram.com/phocureburn/?hl=en">
-                  <img
-                    src={instagram}
-                    alt="Instagram"
-                    style={{ width: "1em", height: "1em" }}
-                  />
-                </a>
+            <a title="facebook" href="https://www.facebook.com/phocureburn/">
+              <img
+                src={facebook}
+                alt="Facebook"
+                style={{ width: "1em", height: "1em" }}
+              />
+            </a>
+            <a title="twitter" href="https://twitter.com/phocureburn">
+              <img
+                className="fas fa-lg"
+                src={twitter}
+                alt="Twitter"
+                style={{ width: "1em", height: "1em" }}
+              />
+            </a>
+            <a title="instagram" href="https://www.instagram.com/phocureburn/?hl=en">
+              <img
+                src={instagram}
+                alt="Instagram"
+                style={{ width: "1em", height: "1em" }}
+              />
+            </a>
             {/* <Link className="navbar-item" to="/contact"> */}
             {/*   Contact */}
             {/* </Link> */}
