@@ -9,7 +9,7 @@ import BlogRoll from "../components/BlogRoll";
 import FullWidthImage from "../components/FullWidthImage";
 
 // eslint-disable-next-line
-export const IndexPageTemplate = ({
+export const OldIndexPageTemplate = ({
   image,
   title,
   heading,
@@ -37,6 +37,22 @@ export const IndexPageTemplate = ({
                       <h3 className="subtitle">{mainpitch.description}</h3>
                     </div>
                   </div>
+                  <div className="columns">
+                    <div className="column is-12">
+                      <h3 className="has-text-weight-semibold is-size-2">
+                        {heading}
+                      </h3>
+                      <p>{description}</p>
+                    </div>
+                  </div>
+                  <Features gridItems={intro.blurbs} />
+                  <div className="columns">
+                    <div className="column is-12 has-text-centered">
+                      <Link className="btn" to="/products">
+                        See all products
+                      </Link>
+                    </div>
+                  </div>
                   <div className="column is-12">
                     <h3 className="has-text-weight-semibold is-size-2">
                       Latest stories
@@ -58,7 +74,7 @@ export const IndexPageTemplate = ({
   );
 };
 
-IndexPageTemplate.propTypes = {
+OldIndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
   heading: PropTypes.string,
@@ -70,12 +86,12 @@ IndexPageTemplate.propTypes = {
   }),
 };
 
-const IndexPage = ({ data }) => {
+const OldIndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
 
   return (
     <Layout>
-      <IndexPageTemplate
+      <OldIndexPageTemplate
         image={frontmatter.image}
         title={frontmatter.title}
         heading={frontmatter.heading}
@@ -88,7 +104,7 @@ const IndexPage = ({ data }) => {
   );
 };
 
-IndexPage.propTypes = {
+OldIndexPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.object,
@@ -96,10 +112,10 @@ IndexPage.propTypes = {
   }),
 };
 
-export default IndexPage;
+export default OldIndexPage;
 
 export const pageQuery = graphql`
-  query IndexPageTemplate {
+  query OldIndexPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
         title

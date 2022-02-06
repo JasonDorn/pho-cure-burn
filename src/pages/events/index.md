@@ -3,6 +3,7 @@ templateKey: 'events-page'
 path: /events
 title: Events
 ---
-### Events
-event1
+### March 2022
+- event1
+- event2
 
