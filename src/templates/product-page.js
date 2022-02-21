@@ -35,7 +35,7 @@ export const ProductPageTemplate = ({
                 <h3 className="has-text-weight-semibold is-size-2">
                   {heading}
                 </h3>
-                <p>{description}</p>
+                {/* <p>{description}</p> */}
               </div>
             </div>
             <div className="columns">
