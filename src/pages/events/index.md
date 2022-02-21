@@ -3,7 +3,5 @@ templateKey: 'events-page'
 path: /events
 title: Events
 ---
-### March 2022
-- event1
-- event2
-
+### June 2022
+- PhoCureBurn First phởndraiser!

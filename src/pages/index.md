@@ -2,10 +2,10 @@
 templateKey: index-page
 title: The best pho on playa
 image: /img/michelin_pho.png
-heading: PhoCureBurn
+heading: PhởCureBurn
 subheading: Hunger made us do it
 mainpitch:
-  title: PhoCureBurn
+  title: PhởCureBurn
   description: >
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed augue
     sapien. Cras eros ante, egestas eu erat finibus, porta gravida purus.

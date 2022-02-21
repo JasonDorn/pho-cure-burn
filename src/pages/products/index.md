@@ -1,10 +1,10 @@
 ---
-heading: Meet the Phounders of PhoCureBurn
+heading: Meet the Phởunders of PhởCureBurn
 path: /products
 templateKey: product-page
-title: Our Phounders
+title: Our Phởunders
 image: /img/denys-nevozhai-tvf_tbxrtv8-unsplash.jpg
-description: PhoCureBurn.
+description: PhởCureBurn.
 intro:
   blurbs:
     - image: /img/cheeky.png

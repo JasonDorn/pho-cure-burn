@@ -50,7 +50,7 @@ const Navbar = () => {
               About
             </Link>
             <Link className="navbar-item" to="/products">
-              Phounders
+              Phởunders
             </Link>
             <Link className="navbar-item" to="/events">
               Events
