@@ -5,17 +5,17 @@ image: /img/michelin_pho.png
 heading: PhởCureBurn
 subheading: Hunger made us do it
 mainpitch:
-  title: PhởCureBurn
+  title: Who Are We?
   description: >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed augue
-    sapien. Cras eros ante, egestas eu erat finibus, porta gravida purus.
-    Praesent imperdiet diam et posuere imperdiet. Cras tincidunt fermentum dui.
-    Nullam quam justo, vestibulum cursus mollis vitae, pellentesque sit amet
-    sem. Vestibulum a semper purus, ut suscipit magna. Aenean aliquet suscipit
-    orci, eget cursus ipsum condimentum eget. Proin maximus justo sit amet
-    lectus fermentum pharetra sed sed quam. Vestibulum cursus nibh ex, vel
-    fermentum ex tincidunt eget. Donec consequat vehicula mi vel pulvinar.
-    Vestibulum tempus enim velit, non consequat nulla ultrices in. Etiam cursus
-    mauris nunc, a euismod tortor dignissim vitae. Duis viverra libero nunc, nec
-    imperdiet lorem congue vel. Nunc euismod lobortis quam id pharetra.
+    PhởCureBurn is a vision our dear friend Michelin once had. A vision
+    where weary wanderers would find themselves chasing another type of art.
+    Art that can be smelled, sought out, and enjoyed *somewhere* in deep playa.
+    Together, 5 best friends decided it's time to bring this vision to Burning Man.
+mission:
+  title: What Is Our Mission?
+  description: >
+    We want to give the people of Black Rock City another home they came come back
+    to and enjoy vietnamese iced coffee, spring rolls, and of course a bowl of pho.
+    PhoCureBurn is a home for all of those looking for fun company, and tasty
+    delights.
 ---
