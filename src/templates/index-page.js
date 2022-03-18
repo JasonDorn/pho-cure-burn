@@ -1,12 +1,12 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { Link, graphql } from "gatsby";
-import { getImage } from "gatsby-plugin-image";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Link, graphql } from 'gatsby';
+import { getImage } from 'gatsby-plugin-image';
 
-import Layout from "../components/Layout";
+import Layout from '../components/Layout';
 // import Features from "../components/Features";
-import BlogRoll from "../components/BlogRoll";
-import FullWidthImage from "../components/FullWidthImage";
+import BlogRoll from '../components/BlogRoll';
+import FullWidthImage from '../components/FullWidthImage';
 
 // eslint-disable-next-line
 export const IndexPageTemplate = ({
