@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import { Link } from "gatsby";
-import logo from "../img/logo.svg";
-import facebook from "../img/social/facebook.svg";
-import instagram from "../img/social/instagram.svg";
-import twitter from "../img/social/twitter.svg";
+import React, { useState } from 'react';
+import { Link } from 'gatsby';
+import logo from '../img/logo.svg';
+import facebook from '../img/social/facebook.svg';
+import instagram from '../img/social/instagram.svg';
+import twitter from '../img/social/twitter.svg';
 
 const Navbar = () => {
   const [navBarActiveClass, setNavbarActiveClass] = useState('');
@@ -14,7 +14,7 @@ const Navbar = () => {
     } else {
       setNavbarActiveClass('');
     }
-  }
+  };
 
   return (
     <nav
@@ -25,7 +25,7 @@ const Navbar = () => {
       <div className="container">
         <div className="navbar-brand">
           <Link to="/" className="navbar-item" title="Logo">
-            <img src={logo} alt="PCB" className='logo' />
+            <img src={logo} alt="PCB" className="logo" />
           </Link>
           {/* Hamburger menu */}
           <div
@@ -41,15 +41,12 @@ const Navbar = () => {
             <span />
           </div>
         </div>
-        <div
-          id="navMenu"
-          className={`navbar-menu ${navBarActiveClass}`}
-        >
+        <div id="navMenu" className={`navbar-menu ${navBarActiveClass}`}>
           <div className="navbar-start has-text-centered">
             <Link className="navbar-item" to="/about">
               About
             </Link>
-            <Link className="navbar-item" to="/products">
+            <Link className="navbar-item" to="/phounders">
               Phởunders
             </Link>
             <Link className="navbar-item" to="/events">
@@ -64,7 +61,7 @@ const Navbar = () => {
               <img
                 src={facebook}
                 alt="Facebook"
-                style={{ width: "1em", height: "1em" }}
+                style={{ width: '1em', height: '1em' }}
               />
             </a>
             <a title="twitter" href="https://twitter.com/phocureburn">
@@ -72,14 +69,17 @@ const Navbar = () => {
                 className="fas fa-lg"
                 src={twitter}
                 alt="Twitter"
-                style={{ width: "1em", height: "1em" }}
+                style={{ width: '1em', height: '1em' }}
               />
             </a>
-            <a title="instagram" href="https://www.instagram.com/phocureburn/?hl=en">
+            <a
+              title="instagram"
+              href="https://www.instagram.com/phocureburn/?hl=en"
+            >
               <img
                 src={instagram}
                 alt="Instagram"
-                style={{ width: "1em", height: "1em" }}
+                style={{ width: '1em', height: '1em' }}
               />
             </a>
             {/* <Link className="navbar-item" to="/contact"> */}

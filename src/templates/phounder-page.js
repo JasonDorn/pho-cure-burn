@@ -1,16 +1,16 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { graphql } from "gatsby";
-import { getImage } from "gatsby-plugin-image";
-import Layout from "../components/Layout";
-import Features from "../components/Features";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { graphql } from 'gatsby';
+import { getImage } from 'gatsby-plugin-image';
+import Layout from '../components/Layout';
+import Features from '../components/Features';
 // import Testimonials from "../components/Testimonials";
 // import Pricing from "../components/Pricing";
 // import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
-import FullWidthImage from "../components/FullWidthImage";
+import FullWidthImage from '../components/FullWidthImage';
 
 // eslint-disable-next-line
-export const ProductPageTemplate = ({
+export const PhounderPageTemplate = ({
   image,
   title,
   heading,
@@ -40,7 +40,7 @@ export const ProductPageTemplate = ({
             </div>
             <div className="columns">
               <div className="column is-10 is-offset-1">
-                <Features gridItems={intro.blurbs} /> 
+                <Features gridItems={intro.blurbs} />
                 {/* <div className="columns"> */}
                 {/*   <div className="column is-7"> */}
                 {/*     <h3 className="has-text-weight-semibold is-size-3"> */}
@@ -96,7 +96,7 @@ export const ProductPageTemplate = ({
   );
 };
 
-ProductPageTemplate.propTypes = {
+PhounderPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
   heading: PropTypes.string,
@@ -120,12 +120,12 @@ ProductPageTemplate.propTypes = {
   }),
 };
 
-const ProductPage = ({ data }) => {
+const PhounderPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
 
   return (
     <Layout>
-      <ProductPageTemplate
+      <PhounderPageTemplate
         image={frontmatter.image}
         title={frontmatter.title}
         heading={frontmatter.heading}
@@ -140,7 +140,7 @@ const ProductPage = ({ data }) => {
   );
 };
 
-ProductPage.propTypes = {
+PhounderPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.object,
@@ -148,10 +148,10 @@ ProductPage.propTypes = {
   }),
 };
 
-export default ProductPage;
+export default PhounderPage;
 
-export const productPageQuery = graphql`
-  query ProductPage($id: String!) {
+export const phounderPageQuery = graphql`
+  query PhounderPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
