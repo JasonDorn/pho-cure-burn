@@ -1,11 +1,12 @@
 import React from "react";
+import { GatsbyImage } from "gatsby-plugin-image";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import { HTMLContent } from "../components/Content";
 
 // eslint-disable-next-line
-export const EventsPageTemplate = ({ title, content, contentComponent }) => {
+export const EventsPageTemplate = ({ image, title, content, contentComponent }) => {
   const PageContent = contentComponent;
 
   return (
@@ -18,6 +19,9 @@ export const EventsPageTemplate = ({ title, content, contentComponent }) => {
                 {title}
               </h2>
               <PageContent className="content" content={content} />
+              <a href="https://www.facebook.com/events/741941040522712/">
+                <GatsbyImage image={image.childImageSharp.gatsbyImageData} />
+              </a>
             </div>
           </div>
         </div>
@@ -40,6 +44,7 @@ const EventsPage = ({ data }) => {
       <EventsPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
+        image={post.frontmatter.image}
         content={post.html}
       />
     </Layout>
@@ -58,6 +63,11 @@ export const eventsPageQuery = graphql`
       html
       frontmatter {
         title
+        image {
+          childImageSharp {
+            gatsbyImageData(width: 500, quality: 92, layout: CONSTRAINED)
+          }
+        }
       }
     }
   }
