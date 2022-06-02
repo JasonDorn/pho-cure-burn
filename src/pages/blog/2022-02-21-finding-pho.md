@@ -7,17 +7,18 @@ description: "Pho is a Vietnamese soup that’s made with all the good stuff:
   The best thing about pho is that it’s such a restorative food—the comforting
   soup is savory and rich, while still feeling clean and refreshing at the same
   time."
-featuredpost: true
+featuredpost: false
 featuredimage: /img/finding-pho.jpg
 tags:
   - cooking
   - pho
 ---
+
 ![pho](/img/finding-pho.jpg)
 
 This week we’ll **take** a look at all the steps required to make astonishing coffee with a Chemex at home. The Chemex Coffeemaker is a manual, pour-over style glass-container coffeemaker that Peter Schlumbohm invented in 1941, and which continues to be manufactured by the Chemex Corporation in Chicopee, Massachusetts.
 
-In 1958, designers at the [Illinois Institute of Technology](https://www.spacefarm.digital) said that the Chemex Coffeemaker is *"one of the best-designed products of modern times"*, and so is included in the collection of the Museum of Modern Art in New York City.
+In 1958, designers at the [Illinois Institute of Technology](https://www.spacefarm.digital) said that the Chemex Coffeemaker is _"one of the best-designed products of modern times"_, and so is included in the collection of the Museum of Modern Art in New York City.
 
 ## How we make pho
 
