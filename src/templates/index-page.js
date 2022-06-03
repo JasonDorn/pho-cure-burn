@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link, graphql } from 'gatsby';
-import { getImage } from 'gatsby-plugin-image';
+import {Link, graphql} from 'gatsby';
+import {getImage} from 'gatsby-plugin-image';
 
 import Layout from '../components/Layout';
 // import Features from "../components/Features";
@@ -80,8 +80,8 @@ IndexPageTemplate.propTypes = {
   }),
 };
 
-const IndexPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark;
+const IndexPage = ({data}) => {
+  const {frontmatter} = data.markdownRemark;
 
   return (
     <Layout>
@@ -127,19 +127,6 @@ export const pageQuery = graphql`
         }
         mission {
           title
-          description
-        }
-        description
-        intro {
-          blurbs {
-            image {
-              childImageSharp {
-                gatsbyImageData(width: 240, quality: 64, layout: CONSTRAINED)
-              }
-            }
-            text
-          }
-          heading
           description
         }
       }

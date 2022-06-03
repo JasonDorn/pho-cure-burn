@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { graphql } from 'gatsby';
-import { getImage } from 'gatsby-plugin-image';
+import {graphql} from 'gatsby';
+import {getImage} from 'gatsby-plugin-image';
 import Layout from '../components/Layout';
 import Features from '../components/Features';
 // import Testimonials from "../components/Testimonials";
@@ -120,8 +120,8 @@ PhounderPageTemplate.propTypes = {
   }),
 };
 
-const PhounderPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark;
+const PhounderPage = ({data}) => {
+  const {frontmatter} = data.markdownRemark;
 
   return (
     <Layout>
@@ -170,56 +170,6 @@ export const phounderPageQuery = graphql`
               }
             }
             text
-          }
-          heading
-          description
-        }
-        main {
-          heading
-          description
-          image1 {
-            alt
-            image {
-              childImageSharp {
-                gatsbyImageData(width: 526, quality: 92, layout: CONSTRAINED)
-              }
-            }
-          }
-          image2 {
-            alt
-            image {
-              childImageSharp {
-                gatsbyImageData(width: 526, quality: 92, layout: CONSTRAINED)
-              }
-            }
-          }
-          image3 {
-            alt
-            image {
-              childImageSharp {
-                gatsbyImageData(quality: 72, layout: FULL_WIDTH)
-              }
-            }
-          }
-        }
-        testimonials {
-          author
-          quote
-        }
-
-        full_image {
-          childImageSharp {
-            gatsbyImageData(quality: 100, layout: FULL_WIDTH)
-          }
-        }
-        pricing {
-          heading
-          description
-          plans {
-            description
-            items
-            plan
-            price
           }
         }
       }
