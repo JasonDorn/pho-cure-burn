@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: The best pho on playa
-image: /img/michelin_pho.png
+image: /img/hero.jpg
 heading: PhởCureBurn
 subheading: Hunger made us do it
 mainpitch:

@@ -4,11 +4,12 @@ import { GatsbyImage } from "gatsby-plugin-image";
 
 export default function FullWidthImage(props) {
   const {
-    height = 400,
+    height = 500,
     img,
     title,
     subheading,
     imgPosition = "top left",
+    objectFit = "cover",
   } = props;
 
   return (
@@ -23,7 +24,7 @@ export default function FullWidthImage(props) {
         {img?.url ? (
           <img
             src={img}
-            objectFit={"cover"}
+            objectFit={objectFit}
             objectPosition={imgPosition}
             style={{
               gridArea: "1/1",
@@ -40,7 +41,7 @@ export default function FullWidthImage(props) {
         ) : (
           <GatsbyImage
             image={img}
-            objectFit={"cover"}
+            objectFit={objectFit}
             objectPosition={imgPosition}
             style={{
               gridArea: "1/1",

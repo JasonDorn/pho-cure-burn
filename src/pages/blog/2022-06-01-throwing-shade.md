@@ -10,6 +10,8 @@ featuredimage: /img/throwing-shade.jpg
 tags:
   - "#BurningMan#Shade#RadicalSelfReliance"
 ---
+![pho](/img/shade.png)
+
 # Your basic 10 x 20 Shade Structure
 
 ## A Diagram

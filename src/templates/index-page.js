@@ -1,12 +1,12 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import {Link, graphql} from 'gatsby';
-import {getImage} from 'gatsby-plugin-image';
+import React from "react";
+import PropTypes from "prop-types";
+import { Link, graphql } from "gatsby";
+import { getImage } from "gatsby-plugin-image";
 
-import Layout from '../components/Layout';
+import Layout from "../components/Layout";
 // import Features from "../components/Features";
-import BlogRoll from '../components/BlogRoll';
-import FullWidthImage from '../components/FullWidthImage';
+import BlogRoll from "../components/BlogRoll";
+import FullWidthImage from "../components/FullWidthImage";
 
 // eslint-disable-next-line
 export const IndexPageTemplate = ({
@@ -23,7 +23,13 @@ export const IndexPageTemplate = ({
 
   return (
     <div>
-      <FullWidthImage img={heroImage} title={title} subheading={subheading} />
+      <FullWidthImage
+        objectFit="contain"
+        img={heroImage}
+        title={title}
+        subheading={subheading}
+        imgPosition="none"
+      />
       <section className="section section--gradient">
         <div className="container">
           <div className="section">
@@ -32,24 +38,28 @@ export const IndexPageTemplate = ({
                 <div className="content">
                   <div className="content">
                     <div className="tile">
-                      <h1 className="title">{mainpitch.title}</h1>
+                      <h2 className="has-text-weight-semibold is-size-3">
+                        {mainpitch.title}
+                      </h2>
                     </div>
-                    <div className="tile">
-                      <h3 className="subtitle">{mainpitch.description}</h3>
+                    <div>
+                      <p className="is-size-5">{mainpitch.description}</p>
                     </div>
                   </div>
                   <div className="content">
                     <div className="tile">
-                      <h1 className="title">{mission.title}</h1>
+                      <h2 className="has-text-weight-semibold is-size-3">
+                        {mission.title}
+                      </h2>
                     </div>
                     <div className="tile">
-                      <h3 className="subtitle">{mission.description}</h3>
+                      <p className="is-size-5">{mission.description}</p>
                     </div>
                   </div>
                   <div className="column is-12">
-                    <h3 className="has-text-weight-semibold is-size-2">
+                    <h2 className="has-text-weight-semibold is-size-3">
                       Latest stories
-                    </h3>
+                    </h2>
                     <BlogRoll />
                     <div className="column is-12 has-text-centered">
                       <Link className="btn" to="/blog">
@@ -80,8 +90,8 @@ IndexPageTemplate.propTypes = {
   }),
 };
 
-const IndexPage = ({data}) => {
-  const {frontmatter} = data.markdownRemark;
+const IndexPage = ({ data }) => {
+  const { frontmatter } = data.markdownRemark;
 
   return (
     <Layout>

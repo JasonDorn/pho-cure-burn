@@ -45,7 +45,15 @@ const TemplateWrapper = ({ children }) => {
         <meta property="og:url" content="/" />
         <meta
           property="og:image"
-          content={`${withPrefix("/")}img/adam-hornyak-c0wcdaxudhm-unsplash.jpg`}
+          content={`${withPrefix(
+            "/"
+          )}img/adam-hornyak-c0wcdaxudhm-unsplash.jpg`}
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Fira+Code:wght@300;400&family=Inconsolata&family=Noto+Sans+JP&family=Roboto+Mono:ital,wght@0,400;1,300&family=Roboto:wght@300;400&family=Source+Code+Pro&display=swap"
+          rel="stylesheet"
         />
       </Helmet>
       <Navbar />
