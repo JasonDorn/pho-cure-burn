@@ -1,19 +1,17 @@
 ---
-templateKey: 'about-page'
+templateKey: about-page
 path: /about
-title: Our Values
+title: PhoCureValues
 ---
 ### Good Eats
-- Coffee brewed the same way they do it in Vietnam ***and*** with ice?!
-- Think you can eat and roll your way to being king or queen of the spring roll off competition?
-- The best 48 hour Pho you'll try in your life. We'll let our pho do the talking here.
+- Coffee brewed just like in Vietnam ***and*** with ice?!
+- The BEST Pho you'll try in your life. Made with love.
+- Food time is our favorite time. 
 
-### Good Beats
-As music ***lovers*** we are always providing an environment influenced by the danish concept of Hygge.
+### Building Community, One Bowl at Time
+- We live to eat. We live to feed. 
+- We enjoy giving back to our communities and a portion of our fundraising is donated to organizations supporting burn victims. 
 
-### One bowl at a time
-As people who can't surive without food, we center our lives around it. It's the centerpiece of 
-our family, friends, stories, memories, and laughs. Food time is our ***favorite*** time.
 
-### Community
-We thrive off of our community and love to give back. Come find us at our fundraisers around the country to help us bring a little bit of us here every year
+### Hygge
+- Come experience the experience.
