@@ -2,8 +2,8 @@
 templateKey: blog-post
 title: Throwing Shade
 date: 2022-06-01T01:00:13.579Z
-description: If you're at Burning man, you're going to constantly find yourself
-  either looking for shade, or throwing it. So let's talk about how to build
+description: If you're at Burning man, you're constantly going to find yourself
+  either looking for shade or throwing it. So, let's talk about how to build
   your own shade structure the old burner way.
 featuredpost: true
 featuredimage: /img/throwing-shade.jpg
